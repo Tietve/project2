@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './HomePage';
+import Footerheader from "./footerheader";
+import EventDetail from "./EventDetail";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <nav>
+                {/* Link điều hướng giữa các trang */}
+                <Link to="/">Home</Link>
+                <Link to="/footerheader">navfoot</Link>
+                <Link to="/EventDetail">eventdetail</Link>
+            </nav>
+            <Routes>
+                {/* Định tuyến các trang */}
+                <Route path="/" element={<HomePage />} />
+                <Route path="/footerheader" element={<Footerheader />} />
+                <Route path="/eventdetail" element={<EventDetail />} />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;

@@ -1,0 +1,71 @@
+
+:root {
+    --background-color: rgba(10, 7, 95, 1);
+    --hover-color: rgba(252, 252, 252, .25);
+}
+
+header {
+    top: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 175px;
+    padding-right: 78px;
+    position: sticky;
+}
+
+
+.icon-logo-class {
+    margin-right: auto;
+    background-color: transparent;
+    padding: 0px;
+    border-color: transparent;
+}
+
+.navbar-class li {
+    display: inline-block;
+}
+
+.navbar-class li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: all .3s ease 0s;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    cursor: pointer;
+}
+
+.active{
+    padding: 10px 30.5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    border-bottom: solid;
+    cursor: pointer;
+}
+
+#btn-login-id{
+    height: 41px;
+    border-color: white;
+    border: solid 1px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 10px 30.5px;
+    margin-left: 30px;
+    color: white;
+    background-color: transparent;
+}
+
+#btn-login-id:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}

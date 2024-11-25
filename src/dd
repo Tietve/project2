@@ -1,0 +1,12 @@
+const App = () => {
+    return(
+        <div>
+            <HeaderHome />
+            <SearchingHome />
+            <productHome />
+            <Jointhebrand />
+            <FooterHome />
+        </div>
+    )
+
+}
